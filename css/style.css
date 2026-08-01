@@ -421,7 +421,7 @@ footer{
 
     border-radius:50%;
 
-    transition:.3s;
+    transition:transform .3s ease;
 }
 
 .switch input:checked + .slider{
