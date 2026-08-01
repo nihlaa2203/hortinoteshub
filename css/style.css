@@ -31,6 +31,19 @@ body.dark-mode{
     padding:0;
     box-sizing:border-box;
 }
+body,
+header,
+.hero,
+.card,
+.feature-card,
+.theme-btn,
+.hero-btn,
+input{
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
 
 /* Body */
 
@@ -99,7 +112,6 @@ nav a:hover{
 ========================== */
 
 .hero{
-
     display:flex;
     justify-content:center;
     align-items:center;
@@ -108,8 +120,11 @@ nav a:hover{
 
     padding:80px 10%;
 
-    background:linear-gradient(135deg,#e8f5e9,#f6faf5);
-
+    background:linear-gradient(
+        135deg,
+        var(--bg-color),
+        var(--card-color)
+    );
 }
 
 .hero-text{
@@ -119,43 +134,35 @@ nav a:hover{
 }
 
 .hero h2{
-
     font-size:48px;
-
-    color:#1b5e20;
-
+    color:var(--primary);
     margin-bottom:20px;
-
     line-height:1.2;
-
 }
 
 .hero p{
-
     font-size:20px;
-
-    color:#555;
-
+    color:var(--secondary-text);
     margin-bottom:35px;
-
 }
 
 .hero input{
-
     width:80%;
-
     max-width:450px;
 
     padding:16px;
 
     border-radius:30px;
 
-    border:2px solid #2e7d32;
+    border:2px solid var(--primary);
+
+    background:var(--card-color);
+
+    color:var(--text-color);
 
     outline:none;
 
     font-size:18px;
-
 }
 
 .hero-btn{
@@ -168,7 +175,7 @@ nav a:hover{
 
     border-radius:30px;
 
-    background:#2e7d32;
+    background:var(--primary);
 
     color:white;
 
@@ -182,7 +189,7 @@ nav a:hover{
 
 .hero-btn:hover{
 
-    background:#1b5e20;
+    background:var(--primary-hover);
 
     transform:translateY(-3px);
 
