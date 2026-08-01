@@ -11,6 +11,8 @@
     --primary-hover:#256428;
     --border:#e5e5e5;
     --shadow:0 5px 20px rgba(0,0,0,.08);
+    --hero-start:#e8f5e9;
+    --hero-end:#f6faf5;
 }
 body.dark-mode{
 
@@ -22,7 +24,8 @@ body.dark-mode{
     --primary-hover:#93d66c;
     --border:#333;
     --shadow:0 5px 20px rgba(0,0,0,.35);
-
+    --hero-start:#1f3a26;
+    --hero-end:#121212;
 }
 /* Reset */
 
@@ -121,10 +124,10 @@ nav a:hover{
     padding:80px 10%;
 
     background:linear-gradient(
-        135deg,
-        var(--bg-color),
-        var(--card-color)
-    );
+    135deg,
+    var(--hero-start),
+    var(--hero-end)
+);
 }
 
 .hero-text{
