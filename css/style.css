@@ -13,6 +13,8 @@
     --shadow:0 5px 20px rgba(0,0,0,.08);
     --hero-start:#e8f5e9;
     --hero-end:#f6faf5;
+    --footer-bg:#1b5e20;
+    --footer-heading:#a5d6a7;
 }
 body.dark-mode{
 
@@ -26,6 +28,8 @@ body.dark-mode{
     --shadow:0 5px 20px rgba(0,0,0,.35);
     --hero-start:#1f3a26;
     --hero-end:#121212;
+    --footer-bg:#0d3b1e;
+    --footer-heading:#8fd694;
 }
 /* Reset */
 
@@ -312,7 +316,7 @@ nav a:hover{
 ========================== */
 
 footer{
-    background:#1b5e20;
+    background:var(--footer-bg);
     color:white;
     padding:60px 10% 20px;
 }
@@ -332,7 +336,7 @@ footer{
 
     margin-bottom:20px;
 
-    color:#a5d6a7;
+    color:var(--footer-heading);
 }
 
 .footer-column p{
