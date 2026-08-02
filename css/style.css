@@ -66,20 +66,25 @@ body{
 
 /* Header */
 
+/* ================= HEADER ================= */
+
 header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:18px 8%;
+    padding:16px 7%;
 
     background:var(--card-color);
 
-    box-shadow:var(--shadow);
-
-    position:sticky;
-    top:0;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
 }
+
+/* Logo */
 
 .logo{
     display:flex;
@@ -88,53 +93,69 @@ header{
 }
 
 .logo img{
-    width:65px;
-    height:65px;
+    width:58px;
+    height:58px;
     object-fit:contain;
 }
 
-.logo-text h2{
+.logo-text h1{
+    font-size:2rem;
     color:var(--primary);
-    font-size:36px;
     margin:0;
     line-height:1;
 }
 
 .logo-text p{
-    margin-top:6px;
+    margin-top:4px;
+    font-size:.9rem;
     color:var(--text-color);
-    font-size:14px;
-}
-nav a{
-    text-decoration:none;
-    margin:0 15px;
-    color:var(--text-color);
-    font-weight:600;
 }
 
-nav a:hover{
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:50px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--text-color);
+    font-weight:600;
+    transition:.3s;
+    padding-bottom:8px;
+}
+
+.nav-links a:hover{
     color:var(--primary);
 }
 
-.theme-btn{
+.nav-links a.active{
+    color:var(--primary);
+    border-bottom:3px solid var(--primary);
+}
 
-    padding:10px 18px;
+/* Right Side */
+
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+.icon-btn{
+    width:42px;
+    height:42px;
 
     border:none;
+    border-radius:50%;
 
-    border-radius:25px;
-
-    background:var(--primary);
-
-    color:white;
+    background:var(--background);
 
     cursor:pointer;
 
-    font-weight:bold;
-}
-
-.theme-btn:hover{
-    background:var(--primary-hover);
+    font-size:18px;
 }
 /* ================= HERO ================= */
 
