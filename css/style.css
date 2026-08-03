@@ -191,9 +191,9 @@ header{
 }
 
 .theme-toggle{
-    display:flex;
-    align-items:center;
-    gap:8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .theme-toggle .icon{
@@ -252,33 +252,11 @@ header{
     transform:translateX(28px);
 }
 .header-actions{
-    display:flex;
-    align-items:center;
-    gap:20px;
-}
-.search-btn{
-    width:46px;
-    height:46px;
-
-    border:none;
-    border-radius:50%;
-
-    background:var(--card-color);
-    box-shadow:var(--shadow);
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    font-size:22px;
-    cursor:pointer;
-
-    transition:.3s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-.search-btn:hover{
-    transform:scale(1.08);
-}
 
 /* ================= HERO ================= */
 
