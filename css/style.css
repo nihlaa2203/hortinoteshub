@@ -90,7 +90,6 @@ header{
 .logo img{
     height:80px;
     width:auto;
-    object-fit:contain;
 }
 
 .logo-text h1{
