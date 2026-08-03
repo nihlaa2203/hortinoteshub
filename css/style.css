@@ -193,49 +193,55 @@ header{
 .theme-toggle{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:8px;
 }
 
 .theme-toggle .icon{
     font-size:18px;
-    user-select:none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    line-height:1;
 }
 
-.switch{
+..switch{
     position:relative;
-    display:inline-block;
     width:58px;
     height:30px;
+    display:inline-block;
 }
 
 .switch input{
-    opacity:0;
-    width:0;
-    height:0;
+    display:none;
 }
 
 .slider{
     position:absolute;
-    cursor:pointer;
     inset:0;
+
     background:#cfcfcf;
     border-radius:50px;
-    transition:.35s;
+
+    cursor:pointer;
+    transition:.3s;
 }
 
 .slider::before{
     content:"";
+
     position:absolute;
+
     width:24px;
     height:24px;
+
     left:3px;
     top:3px;
 
-    background:white;
+    background:#fff;
     border-radius:50%;
 
-    transition:.35s;
-    box-shadow:0 2px 8px rgba(0,0,0,.25);
+    transition:.3s;
+    box-shadow:0 2px 6px rgba(0,0,0,.2);
 }
 
 .switch input:checked + .slider{
@@ -245,21 +251,33 @@ header{
 .switch input:checked + .slider::before{
     transform:translateX(28px);
 }
-.theme-toggle .icon{
-    opacity:.45;
+.header-actions{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+.search-btn{
+    width:46px;
+    height:46px;
+
+    border:none;
+    border-radius:50%;
+
+    background:var(--card-color);
+    box-shadow:var(--shadow);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:22px;
+    cursor:pointer;
+
     transition:.3s;
 }
 
-.switch input:not(:checked) ~ .icon:last-child{
-    opacity:1;
-}
-
-.switch input:checked ~ .icon:last-child{
-    opacity:1;
-}
-
-.switch input:checked ~ .icon:first-child{
-    opacity:.45;
+.search-btn:hover{
+    transform:scale(1.08);
 }
 
 /* ================= HERO ================= */
