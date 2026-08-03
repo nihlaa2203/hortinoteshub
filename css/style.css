@@ -283,7 +283,26 @@ header{
 }
 
 .hero-text{
-    flex:1;
+    animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.hero-image{
+    flex:0.85;
+}
+.hero-badge{
+    box-shadow:0 6px 20px rgba(46,125,50,.12);
 }
 
 .hero-badge{
@@ -356,6 +375,12 @@ header{
 
     border:2px solid var(--primary);
 
+    transition:.3s ease;
+
+}
+
+.search-box:focus-within{
+    box-shadow:0 0 0 4px rgba(46,125,50,.15);
 }
 
 .search-box input{
@@ -411,12 +436,25 @@ header{
 }
 
 .hero-image img{
-
     width:100%;
-
-    max-width:500px;
-
+    max-width:480px;
+    height:auto;
 }
+
+.hero-image img{
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-12px);
+    }
+}
+
 /* ==========================
    CATEGORIES
 ========================== */
