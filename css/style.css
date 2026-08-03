@@ -66,65 +66,62 @@ body{
 
 /* Header */
 
-/* ================= HEADER ================= */
-
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-
     display:flex;
     justify-content:space-between;
     align-items:center;
 
-    padding:16px 7%;
+    padding:18px 8%;
 
     background:var(--card-color);
 
-    box-shadow:0 3px 15px rgba(0,0,0,.08);
-}
+    box-shadow:var(--shadow);
 
-/* Logo */
+    position:sticky;
+    top:0;
+}
 
 .logo{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:14px;
 }
 
 .logo img{
-    width:58px;
-    height:58px;
+    width:60px;
+    height:60px;
     object-fit:contain;
 }
 
 .logo-text h1{
     font-size:2rem;
+    font-weight:700;
     color:var(--primary);
     margin:0;
-    line-height:1;
+    line-height:1.1;
 }
 
 .logo-text p{
+    font-size:0.85rem;
+    color:var(--secondary-text);
     margin-top:4px;
-    font-size:.9rem;
-    color:var(--text-color);
 }
-
-/* Navigation */
-
 .nav-links{
     display:flex;
+    align-items:center;
     list-style:none;
-    gap:50px;
+    gap:45px;
+    margin:0;
+    padding:0;
 }
 
 .nav-links a{
     text-decoration:none;
     color:var(--text-color);
+    font-size:1rem;
     font-weight:600;
-    transition:.3s;
     padding-bottom:8px;
+    transition:0.3s;
 }
 
 .nav-links a:hover{
@@ -135,15 +132,6 @@ header{
     color:var(--primary);
     border-bottom:3px solid var(--primary);
 }
-
-/* Right Side */
-
-.header-actions{
-    display:flex;
-    align-items:center;
-    gap:18px;
-}
-
 .icon-btn{
     width:42px;
     height:42px;
@@ -151,11 +139,42 @@ header{
     border:none;
     border-radius:50%;
 
-    background:var(--background);
+    background:var(--bg-color);
+    color:var(--text-color);
+
+    cursor:pointer;
+    font-size:18px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+}
+
+.icon-btn:hover{
+    background:var(--primary);
+    color:white;
+}
+.theme-btn{
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:25px;
+
+    background:var(--primary);
+
+    color:white;
 
     cursor:pointer;
 
-    font-size:18px;
+    font-weight:bold;
+}
+
+.theme-btn:hover{
+    background:var(--primary-hover);
 }
 /* ================= HERO ================= */
 
