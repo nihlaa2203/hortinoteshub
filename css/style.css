@@ -34,7 +34,10 @@ body.dark-mode{
     --footer-heading:#8fd694;
     --badge-bg:#2b4a2f;
     --badge-text:#b8f5b8;
+    --card-color:#1d1d1d;
+    --shadow:0 5px 20px rgba(0,0,0,.35);
 }
+
 /* Reset */
 
 *{
@@ -77,10 +80,14 @@ header{
 
     padding: 15px 8%;
 
-    background: rgba(255,255,255,0.92);
+    background: var(--card-color);
     backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 
-    box-shadow: 0 3px 18px rgba(0,0,0,.08);
+    box-shadow: var(--shadow);
+
+    transition: background-color 0.3s ease,
+                box-shadow 0.3s ease;
 }
 
 .logo{
