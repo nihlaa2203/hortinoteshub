@@ -471,14 +471,12 @@ header{
     margin-bottom:45px;
 }
 
-.category-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-
-    gap:25px;
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem; /* adjust to match your current spacing */
 }
+
 
 .card{
 
